@@ -141,7 +141,7 @@ do
 			echo -e "** Directory /Users/${i}/.DS_Store does not exist ***" | tee -a "${computername}/${computername}_Processing_Details.txt"
 		fi
 		# Copying .zsh_history
-		if [ -f "/Users/${i}/.zsh_sessions" ]; then
+		if [ -f "/Users/${i}/.zsh_history" ]; then
 			echo -e "\nCommand Run: cp -rf /Users/${i}/.zsh_history ${computername}/${cname}-Triage/Users/${i}/.zsh_history" | tee -a "${computername}/${computername}""_Processing_Details.txt"
 			cp -f "/Users/${i}/.zsh_history" "${computername}/${cname}-Triage/Users/${i}/"
 		else
